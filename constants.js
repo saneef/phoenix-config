@@ -1,11 +1,11 @@
-var MOD = ['ctrl', 'shift'];
-var scr = Screen.main().flippedVisibleFrame();
-var halfWidth = scr.width / 2;
-var quarterWidth = scr.width / 3;
-var twoThirdWidth = scr.width * 2 / 3;
-var threeFourthWidth = scr.width * 3 / 4;
+const MOD = ['ctrl', 'shift'];
+const scr = Screen.main().flippedVisibleFrame();
+const halfWidth = scr.width / 2;
+const quarterWidth = scr.width / 3;
+const twoThirdWidth = scr.width * 2 / 3;
+const threeFourthWidth = scr.width * 3 / 4;
 
-var windowLocations = {
+const windowLocations = {
 	full: {
 		x: 0,
 		y: 0,
