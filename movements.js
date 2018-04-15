@@ -37,3 +37,15 @@ const rightHalf = new Key('9', MOD, () => {
 const rightQuarter = new Key('0', MOD, () => {
 	Window.focused().setFrame(windowLocations.rightQuarter);
 });
+
+const center = new Key('-', MOD, () => {
+	const screen = Screen.main().flippedVisibleFrame();
+	const window = Window.focused();
+
+	if (window) {
+		window.setTopLeft({
+			x: screen.x + (screen.width / 2) - (window.frame().width / 2),
+			y: screen.y + (screen.height / 2) - (window.frame().height / 2)
+		});
+	}
+});
