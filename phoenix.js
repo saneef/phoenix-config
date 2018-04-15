@@ -1,0 +1,3 @@
+Phoenix.set ({
+  openAtLogin: true
+});
