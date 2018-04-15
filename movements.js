@@ -10,8 +10,20 @@ var leftTwoThird = new Key('3', MOD, () => {
 	Window.focused().setFrame(windowLocations.leftTwoThird);
 });
 
+var leftThreeFourth = new Key('4', MOD, () => {
+	Window.focused().setFrame(windowLocations.leftThreeFourth);
+});
+
 var full = new Key('5', MOD, () => {
 	Window.focused().setFrame(windowLocations.full);
+});
+
+var centerThreeFourth = new Key('6', MOD, () => {
+	Window.focused().setFrame(windowLocations.centerThreeFourth);
+});
+
+var rightThreeFourth = new Key('7', MOD, () => {
+	Window.focused().setFrame(windowLocations.rightThreeFourth);
 });
 
 var rightTwoThird = new Key('8', MOD, () => {
